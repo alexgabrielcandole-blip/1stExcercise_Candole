@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _7
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("What's Your First Name: ");
+            string fname = Console.ReadLine();
+
+            Console.Write("What's Your Last Name: ");
+            string lname = Console.ReadLine();
+
+            Console.WriteLine((fname) + " " + (lname));
+        }
+    }
+}

@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Serialization;
+
+public class Class1
+    {
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.WriteLine("Mathematical Operator:\n" +
+                "1. Addition\n" +
+                "2. Subtraction\n" +
+                "3. Division\n" +
+                "4. Multiplication\n" +
+                "5. Exit\n");
+
+            Console.WriteLine("Type via numeral");
+            Console.Write("Choose a Mathematical Operator: ");
+            int choice = int.Parse(Console.ReadLine());
+
+            if (choice == 5)
+            {
+                break;
+            }
+
+            Console.Write("\nEnter a number: ");
+            double num1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter another number: ");
+            double num2 = double.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case (1):
+                    Console.WriteLine("\nAddition");
+                    Console.WriteLine("Result: " + num1 + " + " + num2 + " = " + (num1 + num2) + "\n");
+                    break;
+
+                case (2):
+                    Console.WriteLine("\nSubdivision");
+                    Console.WriteLine("Result: " + num1 + " + " + num2 + " = " + (num1 - num2) + "\n");
+                    break;
+
+                case (3):
+                    Console.WriteLine("\nDivision");
+                    Console.WriteLine("Result: " + num1 + " + " + num2 + " = " + (num1 / num2) + "\n");
+                    break;
+
+                case (4):
+                    Console.WriteLine("\nMultiplication");
+                    Console.WriteLine("Result: " + num1 + " + " + num2 + " = " + (num1 * num2) + "\n");
+                    break;
+            }
+        }
+        }
+    }
+

@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _3
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a Length: ");
+            double length = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter a Width: ");
+            double width = double.Parse(Console.ReadLine());
+
+            double average = length * width;
+
+            Console.WriteLine("The average is: " + (average));
+        }
+    }
+}

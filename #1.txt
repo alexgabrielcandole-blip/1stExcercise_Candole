@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _1
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Your Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Your Course: ");
+            string course = Console.ReadLine();
+
+            Console.Write("Enter Your year level: ");
+            string year = Console.ReadLine();
+
+            Console.Write("Enter Your Section: ");
+            string section = Console.ReadLine();
+
+            Console.WriteLine("\nName: " + (name));
+            Console.WriteLine("Course: " + (course));
+            Console.WriteLine("Year Level: " + (year));
+            Console.WriteLine("Section: " + (section));
+        }
+    }
+}

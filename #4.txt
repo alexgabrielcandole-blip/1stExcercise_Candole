@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _4
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter your grade in Prelim: ");
+            double prelim = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter your grade in Midterm: ");
+            double midterm = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter your grade in Finals: ");
+            double final = double.Parse(Console.ReadLine());
+
+            double average = (prelim + midterm + final) / 3;
+
+            Console.WriteLine("Your Average is: " + average);
+        }
+
+    }
+}

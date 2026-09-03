@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _6
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            bool age;
+
+            Console.Write("What's Your Age: ");
+            int age1 = int.Parse(Console.ReadLine());
+
+            if (age1 >= 18)
+            {
+                age = true;
+            }
+            else
+            {
+                age = false;
+            }
+
+            Console.WriteLine("Is user an adult? " + age);
+            Console.WriteLine("Your Age is: " + age1);
+        }
+    }
+}

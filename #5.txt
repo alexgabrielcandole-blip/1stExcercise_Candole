@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Text;
+
+namespace _5
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            bool student;
+            string enrolled;
+
+            Console.Write("Are You a Student?: (Yes/No)\n");
+            string stud = Console.ReadLine();
+
+            if (stud == "Yes")
+            {
+                student = true;
+                enrolled = "You're Enrolled";
+            }
+            else
+            {
+                student= false;
+                enrolled = "You're Not Enrolled";
+            }
+
+            Console.WriteLine("Student Status: " + student);
+            Console.WriteLine("Enroll Status: " + enrolled);
+
+        }
+    }
+}
