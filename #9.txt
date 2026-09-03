@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _9
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("What's Your Employee Name: ");
+            string ename = Console.ReadLine();
+
+            Console.Write("Your Hours Worked: ");
+            int hours = int.Parse(Console.ReadLine());
+
+            Console.Write("Your Hourly Rate: ");
+            double rate = double.Parse(Console.ReadLine());
+
+            double salary = hours * rate;
+
+            Console.WriteLine("Employee Name: " + ename);
+            Console.WriteLine("Hours Worked: " + hours);
+            Console.WriteLine("Rate: " + rate);
+            Console.WriteLine("Salary: " + salary);
+        }
+    }
+}

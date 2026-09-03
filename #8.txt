@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace _8
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("What Product Are You Buying?: ");
+            string prod = Console.ReadLine();
+
+            Console.Write("How Much Does It Cost: ");
+            double cost = double.Parse(Console.ReadLine());
+
+            Console.Write("How Many Are You Buying: ");
+            double quant = double.Parse(Console.ReadLine());
+
+            double total = cost * quant;
+
+            Console.WriteLine("\nProduct: " + prod);
+            Console.WriteLine("Cost: " + cost);
+            Console.WriteLine("Quantity: " + quant);
+            Console.WriteLine("Total: " + total);
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
+using System.Text;
+using System.Transactions;
+
+namespace _10
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("What's Your Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("What's Your Course: ");
+            string course = Console.ReadLine();
+
+            Console.Write("What's Your Age: ");
+            string age = Console.ReadLine();
+
+            Console.Write("What's Your Year Level: ");
+            string ylevel = Console.ReadLine();
+
+            Console.WriteLine("Input 3 of your grades: ");
+
+            Console.Write("1st Grade: ");
+            double agrade = double.Parse(Console.ReadLine());
+
+            Console.Write("2nd Grade: ");
+            double bgrade = double.Parse(Console.ReadLine());
+
+            Console.Write("3rd Grade: ");
+            double cgrade = double.Parse(Console.ReadLine());
+
+            double fgrade = (agrade + bgrade + cgrade) / 3;
+
+            Console.WriteLine("\nName: " + name);
+            Console.WriteLine("Course: " + course);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Year Level: " + ylevel);
+            Console.WriteLine("Final Grade: " + fgrade);
+        }
+    }
+}
