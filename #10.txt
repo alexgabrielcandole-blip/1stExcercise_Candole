@@ -17,7 +17,7 @@ namespace _10
             string course = Console.ReadLine();
 
             Console.Write("What's Your Age: ");
-            string age = Console.ReadLine();
+            int age = int.Parse(Console.ReadLine());
 
             Console.Write("What's Your Year Level: ");
             string ylevel = Console.ReadLine();
@@ -34,12 +34,14 @@ namespace _10
             double cgrade = double.Parse(Console.ReadLine());
 
             double fgrade = (agrade + bgrade + cgrade) / 3;
+            bool age1 = age >= 18;
 
             Console.WriteLine("\nName: " + name);
             Console.WriteLine("Course: " + course);
             Console.WriteLine("Age: " + age);
             Console.WriteLine("Year Level: " + ylevel);
             Console.WriteLine("Final Grade: " + fgrade);
+            Console.WriteLine("Is 18 or older: " + age1);
         }
     }
 }
